@@ -13,8 +13,7 @@ export default function Card() {
                             Projetos
                         </h3>
                         <p className="text-gray-600 text-sm">
-                            Soluções customizadas para climatização eficiente
-                        </p>
+                            Desenvolvimento de projetos personalizados de climatização para residências, comércios e indústrias, garantindo eficiência e conforto.</p>
                     </div>
 
                     {/* Card 2 */}
@@ -26,7 +25,7 @@ export default function Card() {
                             Manutenção e Higienização
                         </h3>
                         <p className="text-gray-600 text-sm">
-                            Serviços de manutenção preventiva e corretiva
+                            Serviços de manutenção preventiva e corretiva, além de higienização de sistemas de climatização para garantir o funcionamento eficiente e a qualidade do ar.
                         </p>
                     </div>
 
@@ -39,7 +38,7 @@ export default function Card() {
                             Instalação e Montagem
                         </h3>
                         <p className="text-gray-600 text-sm">
-                            Instalação e montagem de equipamentos de climatização
+                            Instalação e montagem de equipamentos de climatização, assegurando a correta operação e desempenho dos sistemas.
                         </p>
                     </div>
 

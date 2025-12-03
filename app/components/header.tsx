@@ -9,10 +9,10 @@ function classNames(...classes: (string | undefined | false)[]) {
 export default function Header() {
 
     const navigation = [
-        { name: 'Inicio', href: '#', current: true },
+        { name: 'Inicio', href: '/', current: true },
         { name: 'Serviços', href: '#', current: false },
         { name: 'Sobre', href: '#', current: false },
-        { name: 'Contato', href: '#', current: false },
+        { name: 'Contato', href: '#contato', current: false },
     ]
 
     return (
@@ -36,7 +36,7 @@ export default function Header() {
                             <a href="#" aria-label="Home">
                                 <img
                                     alt="Your Company"
-                                    src="/images/logo.png"
+                                    src="/images/logo-salvtec.png"
                                     className="max-h-16 w-auto"
                                 />
                             </a>
@@ -62,7 +62,7 @@ export default function Header() {
                 </div>
             </div>
 
-            <DisclosurePanel className="sm:hidden absolute">
+            <DisclosurePanel className="sm:hidden absolute left-0 right-0 top-full bg-white text-gray-900 shadow-md z-20 rounded-b-md">
                 <div className="space-y-1 px-2 pt-2 pb-3">
                     {navigation.map((item) => (
                         <DisclosureButton
@@ -71,7 +71,7 @@ export default function Header() {
                             href={item.href}
                             aria-current={item.current ? 'page' : undefined}
                             className={classNames(
-                                item.current ? 'bg-primary-blue text-white' : 'hover:bg-white/5 hover:text-gray-300',
+                                item.current ? 'bg-primary-blue text-white' : 'hover:bg-gray-100 hover:text-gray-900',
                                 'block rounded-md px-3 py-2 text-base font-medium',
                             )}
                         >
