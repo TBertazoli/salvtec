@@ -15,7 +15,7 @@ export default function Hero() {
                         </h1>
 
                         <p className="mt-4 text-sm sm:text-base md:text-lg">
-                            Alta qualidade e eficiência para a sua Residência, Comércio e Indústria
+                            Especializada em instalação e manutenção de ar condicionado para residências, comércios e indústrias. Marcas consagradas como Hitachi e Gree. Mais de 6 anos de experiência.
                         </p>
 
                         <button className="mt-6 bg-primary-blue hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-medium max-w-40">
@@ -27,7 +27,7 @@ export default function Hero() {
                             >
                                 <img
                                     src="/images/whatsapp.png"
-                                    alt="WhatsApp"
+                                    alt="Contato WhatsApp SalvTec"
                                     className="w-5 h-5"
                                 />
                                 <span>Saiba Mais</span>
