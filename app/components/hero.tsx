@@ -8,7 +8,7 @@ export default function Hero() {
                     <div className="absolute inset-0 bg-black/50 z-0" />
 
                     {/* Content */}
-                    <div className="relative z-10 max-w-6xl mx-auto px-6 h-full flex flex-col justify-center">
+                    <div className="relative z-10 max-w-6xl mx-auto px-6 h-full flex flex-col justify-center text-white">
 
                         <h1 className="text-xl sm:text-2xl md:text-4xl font-bold leading-tight">
                             Soluções em Climatização

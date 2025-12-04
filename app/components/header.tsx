@@ -9,13 +9,18 @@ function classNames(...classes: (string | undefined | false)[]) {
 export default function Header() {
 
     const navigation = [
-        { name: 'Inicio', href: '/', current: true },
-        { name: 'Serviços', href: '#', current: false },
-        { name: 'Sobre', href: '#', current: false },
-        { name: 'Contato', href: '#contato', current: false },
+        { name: 'Inicio', href: '/' },
+        { name: 'Serviços', href: '#servicos' },
+        { name: 'Sobre', href: '#sobre' },
+        // { name: 'Parceiros', href: '#parceiros' },
+        { name: 'Reviews', href: '#reviews' },
+        { name: 'Contato', href: '#contato' },
+        // { name: 'Carreira', href: '#carreira'},
+
     ]
 
     return (
+
         <Disclosure
             as="nav"
             className="relative after:pointer-events-none after:absolute after:inset-x-0 after:bottom-0 after:h-px after:bg-white/10"
@@ -37,8 +42,7 @@ export default function Header() {
                                 <img
                                     alt="Your Company"
                                     src="/images/logo-salvtec.png"
-                                    className="max-h-16 w-auto"
-                                />
+                                    className="max-h-16 w-auto" />
                             </a>
                         </div>
                     </div>
@@ -48,11 +52,7 @@ export default function Header() {
                                 <a
                                     key={item.name}
                                     href={item.href}
-                                    aria-current={item.current ? 'page' : undefined}
-                                    className={classNames(
-                                        item.current ? 'bg-primary-blue text-white' : 'hover:bg-white/5 hover:text-gray-300',
-                                        'rounded-md px-3 py-2 text-sm font-medium',
-                                    )}
+                                    className='hover:bg-white/5 hover:text-gray-300'
                                 >
                                     {item.name}
                                 </a>
@@ -60,26 +60,21 @@ export default function Header() {
                         </div>
                     </div>
                 </div>
-            </div>
-
-            <DisclosurePanel className="sm:hidden absolute left-0 right-0 top-full bg-white text-gray-900 shadow-md z-20 rounded-b-md">
+            </div><DisclosurePanel className="sm:hidden absolute z-30 left-0 right-0 top-full bg-white text-gray-900 shadow-md z-20 rounded-b-md">
                 <div className="space-y-1 px-2 pt-2 pb-3">
                     {navigation.map((item) => (
                         <DisclosureButton
                             key={item.name}
-                            as="a"
-                            href={item.href}
-                            aria-current={item.current ? 'page' : undefined}
-                            className={classNames(
-                                item.current ? 'bg-primary-blue text-white' : 'hover:bg-gray-100 hover:text-gray-900',
-                                'block rounded-md px-3 py-2 text-base font-medium',
-                            )}
+                            as="button"
+                            className="w-full text-left px-3 py-2 rounded-md 'hover:bg-white/5 hover:text-gray-300'"
                         >
-                            {item.name}
+                            <a href={item.href} className="block w-full h-full">
+                                {item.name}
+                            </a>
                         </DisclosureButton>
                     ))}
                 </div>
             </DisclosurePanel>
-        </Disclosure>
+        </Disclosure >
     )
 }
