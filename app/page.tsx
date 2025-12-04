@@ -1,10 +1,11 @@
-import Image from "next/image";
+
 import Header from "./components/header";
 import Hero from "./components/hero";
 import Card from "./components/cards";
 import Footer from "./components/footer";
 import About from "./components/about";
-import Servicos from "./components/servicos";
+import Reviews from "./components/reviews";
+import Credenciada from "./components/credenciada";
 
 export default function Home() {
   return (
@@ -13,7 +14,8 @@ export default function Home() {
       <Hero />
       <Card />
       <About />
-      {/* <Servicos /> */}
+      <Credenciada />
+      <Reviews />
       <Footer />
     </>
   );

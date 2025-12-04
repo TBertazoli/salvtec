@@ -1,8 +1,8 @@
 export default function Footer() {
     return (
-        <footer className="bg-primary-blue border-t border-gray-200 mt-20 text-white">
+        <footer className="bg-primary-blue border-t border-gray-200 mt-20 text-white" id="contato">
             <div className="max-w-7xl mx-auto px-6 py-12">
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-10 items-start">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-10 items-start text-center md:text-left">
                     {/* Brand */}
                     <div className="space-y-3">
                         <h3 className="text-2xl font-bold tracking-tight">
@@ -19,7 +19,7 @@ export default function Footer() {
                             Contato
                         </h4>
                         <ul className="text-sm space-y-2">
-                            <li className="flex items-center gap-3">
+                            <li className="flex items-center gap-3 justify-center md:justify-start">
                                 <span className="inline-block w-2 h-2 rounded-full bg-emerald-500" />
                                 <a
                                     href="https://wa.me/5519998362654"
@@ -31,7 +31,7 @@ export default function Footer() {
                                     WhatsApp: (19) 99836-2654
                                 </a>
                             </li>
-                            <li className="flex items-center gap-3">
+                            <li className="flex items-center gap-3 justify-center md:justify-start">
                                 <span className="inline-block w-2 h-2 rounded-full bg-pink-500" />
                                 <a
                                     href="https://www.instagram.com/salvteccampinas/"
@@ -43,15 +43,27 @@ export default function Footer() {
                                     Instagram: @salvteccampinas
                                 </a>
                             </li>
+                            <li className="flex items-center gap-3 justify-center md:justify-start">
+                                <span className="inline-block w-2 h-2 rounded-full bg-blue-500" />
+                                <a
+                                    href="mailto:salvtec.cps@gmail.com"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    aria-label="Email da SalvTec"
+                                    className="hover:text-black transition-colors"
+                                >
+                                    Email: salvtec.cps@gmail.com
+                                </a>
+                            </li>
                         </ul>
                     </div>
 
                     {/* Social */}
                     <div className="md:justify-self-end">
-                        <h4 className="text-sm font-semibold uppercase tracking-wider text-gray-700 mb-3">
+                        <h4 className="text-sm font-semibold uppercase tracking-wider mb-3 ">
                             Siga-nos
                         </h4>
-                        <div className="flex items-center gap-4">
+                        <div className="flex items-center gap-4 justify-center md:justify-start">
                             <a
                                 href="https://wa.me/5519998362654"
                                 target="_blank"

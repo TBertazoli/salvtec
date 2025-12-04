@@ -1,7 +1,7 @@
 export default function Card() {
     return (
         <>
-            <section className="relative z-20 mb-20 md:-mt-20">
+            <section className="relative z-20 mb-8 md:-mt-20" id="servicos">
                 <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-6">
 
                     {/* Card 1 */}
