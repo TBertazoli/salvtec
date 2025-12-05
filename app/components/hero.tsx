@@ -30,7 +30,7 @@ export default function Hero() {
                                     alt="Contato WhatsApp SalvTec"
                                     className="w-5 h-5"
                                 />
-                                <span>Saiba Mais</span>
+                                <span>Contato</span>
                             </a>
                         </button>
                     </div>

@@ -15,7 +15,6 @@ export default function Header() {
         // { name: 'Parceiros', href: '#parceiros' },
         { name: 'Reviews', href: '#reviews' },
         { name: 'Contato', href: '#contato' },
-        // { name: 'Carreira', href: '#carreira'},
 
     ]
 
@@ -38,7 +37,7 @@ export default function Header() {
                     </div>
                     <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                         <div className="flex shrink-0 items-center">
-                            <a href="#" aria-label="Home">
+                            <a href="/" aria-label="Home">
                                 <img
                                     alt="Your Company"
                                     src="/images/logo-salvtec.png"
