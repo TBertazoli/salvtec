@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 export default function Hero() {
     return (
         <>
@@ -25,9 +27,11 @@ export default function Hero() {
                                 rel="noopener noreferrer"
                                 className="flex items-center justify-center gap-2"
                             >
-                                <img
+                                <Image
                                     src="/images/whatsapp.png"
                                     alt="Contato WhatsApp SalvTec"
+                                    width={20}
+                                    height={20}
                                     className="w-5 h-5"
                                 />
                                 <span>Contato</span>

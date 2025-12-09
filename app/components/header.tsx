@@ -1,6 +1,6 @@
 import { Disclosure, DisclosureButton, DisclosurePanel, Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
-// import Logo from 'images\logo salvitec.jpeg'
+import Image from 'next/image'
 
 function classNames(...classes: (string | undefined | false)[]) {
     return classes.filter(Boolean).join(' ')
@@ -38,9 +38,12 @@ export default function Header() {
                     <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                         <div className="flex shrink-0 items-center">
                             <a href="/" aria-label="Home">
-                                <img
-                                    alt="Your Company"
-                                    src="/images/logo-salvtec.png"
+                                <Image
+                                    alt="SalvTec - Soluções em Climatização"
+                                    src="/images/logo-salvtec-optimized.png"
+                                    width={120}
+                                    height={64}
+                                    priority
                                     className="max-h-16 w-auto" />
                             </a>
                         </div>
