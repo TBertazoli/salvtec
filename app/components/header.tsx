@@ -2,6 +2,7 @@ import { Disclosure, DisclosureButton, DisclosurePanel, Menu, MenuButton, MenuIt
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import Image from 'next/image'
 
+
 function classNames(...classes: (string | undefined | false)[]) {
     return classes.filter(Boolean).join(' ')
 }
@@ -10,11 +11,11 @@ export default function Header() {
 
     const navigation = [
         { name: 'Inicio', href: '/' },
-        { name: 'Serviços', href: '#servicos' },
-        { name: 'Sobre', href: '#sobre' },
+        { name: 'Serviços', href: '/#servicos' },
+        { name: 'Sobre', href: '/#sobre' },
         // { name: 'Parceiros', href: '#parceiros' },
-        { name: 'Reviews', href: '#reviews' },
-        { name: 'Contato', href: '#contato' },
+        { name: 'Reviews', href: '/#reviews' },
+        { name: 'Contato', href: '/#contato' },
 
     ]
 
