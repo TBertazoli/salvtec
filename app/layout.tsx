@@ -23,22 +23,13 @@ export const metadata: Metadata = {
     locale: "pt_BR",
     url: "https://salvtec.com.br",
     siteName: "SalvTec",
-    title: "SalvTec - Climatização Profissional | Ar Condicionado SP",
-    description: "Instalação, manutenção e higienização de ar condicionado em Campinas. Atendemos residências, comércios e indústrias com as melhores marcas do mercado.",
-    images: [
-      {
-        url: "/images/hero2-optimized.webp",
-        width: 1920,
-        height: 1080,
-        alt: "SalvTec - Soluções em Climatização",
-      },
-    ],
+    title: "SalvTec - Climatização Profissional | Ar Condicionado Campinas e Região",
+    description: "Instalação, manutenção e higienização de ar condicionado em Campinas e Região. Atendemos residências, comércios e indústrias com as melhores marcas do mercado.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "SalvTec - Climatização Profissional | Ar Condicionado SP",
-    description: "Instalação, manutenção e higienização de ar condicionado em Campinas. Atendemos residências, comércios e indústrias com as melhores marcas do mercado.",
-    images: ["/images/hero2-optimized.webp"],
+    title: "SalvTec - Climatização Profissional | Ar Condicionado Campinas e Região",
+    description: "Instalação, manutenção e higienização de ar condicionado em Campinas e Região. Atendemos residências, comércios e indústrias com as melhores marcas do mercado.",
   },
   robots: {
     index: true,
