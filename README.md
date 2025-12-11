@@ -1,36 +1,141 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# SalvTec - Website Oficial
 
-## Getting Started
+Website institucional da SalvTec, empresa especializada em soluções de climatização para residências, comércios e indústrias.
 
-First, run the development server:
+## 🚀 Sobre o Projeto
+
+Site desenvolvido com Next.js 16, apresentando os serviços, valores e diferenciais da SalvTec. O projeto utiliza as tecnologias mais modernas para garantir performance, SEO e experiência de usuário otimizadas.
+
+## ✨ Funcionalidades
+
+- **Hero Section** - Apresentação principal com call-to-action para WhatsApp
+- **Serviços** - Cards detalhando projetos, manutenção/higienização e instalação
+- **Sobre Nós** - História e valores da empresa
+- **Marcas Credenciadas** - Parceiros Hitachi e Gree
+- **Avaliações** - Depoimentos de clientes
+- **Contato** - Links diretos para WhatsApp e Instagram
+- **Trabalhe Conosco** - Página de carreiras
+- **Responsivo** - Layout adaptado para mobile, tablet e desktop
+
+## 🛠️ Tecnologias
+
+- **Next.js 16.0.6** - Framework React com App Router
+- **React 19.2.0** - Biblioteca JavaScript
+- **TypeScript 5** - Tipagem estática
+- **Tailwind CSS 4** - Framework CSS utility-first
+- **Headless UI 2.2.9** - Componentes acessíveis
+- **Heroicons 2.2.0** - Ícones SVG
+
+## 📦 Estrutura do Projeto
+
+```
+salvtec/
+├── app/
+│   ├── components/
+│   │   ├── about.tsx        # Seção sobre a empresa
+│   │   ├── cards.tsx        # Cards de serviços
+│   │   ├── credenciada.tsx  # Marcas parceiras
+│   │   ├── footer.tsx       # Rodapé com contatos
+│   │   ├── header.tsx       # Navegação principal
+│   │   ├── hero.tsx         # Banner principal
+│   │   ├── reviews.tsx      # Avaliações de clientes
+│   │   └── schema.tsx       # Schema.org para SEO
+│   ├── carreiras/
+│   │   └── page.tsx         # Página trabalhe conosco
+│   ├── globals.css          # Estilos globais
+│   ├── layout.tsx           # Layout raiz
+│   └── page.tsx             # Página inicial
+├── public/
+│   └── images/              # Imagens otimizadas (WebP)
+├── next.config.ts           # Configuração Next.js
+├── tsconfig.json            # Configuração TypeScript
+└── tailwind.config.ts       # Configuração Tailwind
+```
+
+## 🚀 Como Executar
+
+### Pré-requisitos
+
+- Node.js 20+ 
+- npm, yarn, pnpm ou bun
+
+### Instalação
+
+```bash
+# Clone o repositório
+git clone https://github.com/TBertazoli/salvtec.git
+cd salvtec
+
+# Instale as dependências
+npm install
+```
+
+### Desenvolvimento
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Abra [http://localhost:3000](http://localhost:3000) no navegador.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Build para Produção
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+npm start
+```
 
-## Learn More
+### Lint
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npm run lint
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🎨 Otimizações Implementadas
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Performance
+- ✅ Next.js Image component com otimização automática
+- ✅ Imagens convertidas para WebP (87% de redução)
+- ✅ Lazy loading para imagens abaixo da dobra
+- ✅ Priority loading para conteúdo above-the-fold
+- ✅ Compressão de imagens (hero: 1.7 MB → 26 KB)
 
-## Deploy on Vercel
+### SEO
+- ✅ Metadata completa com Open Graph
+- ✅ Schema.org (LocalBusiness)
+- ✅ Sitemap.xml e robots.txt
+- ✅ Alt text descritivo em todas as imagens
+- ✅ Heading hierarchy otimizada
+- ✅ Canonical URLs
+- ✅ Idioma PT-BR configurado
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Acessibilidade
+- ✅ Componentes Headless UI acessíveis
+- ✅ ARIA labels
+- ✅ Navegação por teclado
+- ✅ Contraste adequado de cores
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📱 Responsividade
+
+O site é totalmente responsivo com breakpoints Tailwind:
+- Mobile: < 640px
+- Tablet: 640px - 1024px
+- Desktop: > 1024px
+
+## 📞 Contatos
+
+- **WhatsApp**: (19) 99836-2654
+- **Instagram**: [@salvteccampinas](https://www.instagram.com/salvteccampinas/)
+
+## 📄 Licença
+
+Este projeto é privado e pertence à SalvTec.
+
+## 👨‍💻 Desenvolvimento
+
+Desenvolvido por **Tati Bertazoli** - [@TBertazoli](https://github.com/TBertazoli)
+
+---
+
+**Branch atual**: `develop`  
+**Última atualização**: Dezembro 2025
