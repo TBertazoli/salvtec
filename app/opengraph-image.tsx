@@ -13,7 +13,7 @@ export default async function Image() {
         (
             <div
                 style={{
-                    backgroundImage: 'url(/images/hero2-optimized.jpg)',
+                    backgroundImage: 'url(/images/hero2-optimized.webp)',
                     width: '100%',
                     height: '100%',
                     display: 'flex',
