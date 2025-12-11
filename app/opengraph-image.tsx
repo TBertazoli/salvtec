@@ -13,7 +13,6 @@ export default async function Image() {
         (
             <div
                 style={{
-                    backgroundImage: 'url(/images/hero2-optimized.webp)',
                     width: '100%',
                     height: '100%',
                     display: 'flex',
@@ -24,19 +23,29 @@ export default async function Image() {
                     position: 'relative',
                 }}
             >
-                {/* Background Image/Icon */}
-                < div
+                {/* Background Image */}
+                <img
+                    src="https://salvtec.com.br/images/hero2-optimized.webp"
+                    alt="Background"
                     style={{
                         position: 'absolute',
-                        right: '80px',
-                        top: '50%',
-                        transform: 'translateY(-50%)',
-                        opacity: 0.15,
-                        fontSize: '400px',
+                        top: 0,
+                        left: 0,
+                        width: '100%',
+                        height: '100%',
+                        objectFit: 'cover',
                     }}
-                >
-                    ❄️
-                </div >
+                />
+
+                {/* Dark overlay */}
+                <div
+                    style={{
+                        position: 'absolute',
+                        inset: 0,
+                        background: 'rgba(0, 0, 0, 0.6)',
+                        zIndex: 1,
+                    }}
+                />
 
                 {/* Logo/Brand */}
                 < div
@@ -44,6 +53,8 @@ export default async function Image() {
                         display: 'flex',
                         alignItems: 'center',
                         marginBottom: '40px',
+                        zIndex: 10,
+                        position: 'relative',
                     }}
                 >
                     <div
@@ -52,6 +63,7 @@ export default async function Image() {
                             fontWeight: 'bold',
                             color: 'white',
                             letterSpacing: '-2px',
+                            textShadow: '2px 2px 4px rgba(0, 0, 0, 0.8)',
                         }}
                     >
                         SalvTec
@@ -68,6 +80,9 @@ export default async function Image() {
                         maxWidth: '900px',
                         lineHeight: 1.2,
                         marginBottom: '30px',
+                        zIndex: 10,
+                        position: 'relative',
+                        textShadow: '2px 2px 4px rgba(0, 0, 0, 0.8)',
                     }}
                 >
                     Soluções em Climatização
@@ -77,10 +92,13 @@ export default async function Image() {
                 < div
                     style={{
                         fontSize: '32px',
-                        color: 'rgba(255, 255, 255, 0.9)',
+                        color: 'white',
                         textAlign: 'center',
                         maxWidth: '800px',
                         marginBottom: '50px',
+                        zIndex: 10,
+                        position: 'relative',
+                        textShadow: '2px 2px 4px rgba(0, 0, 0, 0.8)',
                     }}
                 >
                     Instalação e Manutenção de Ar Condicionado em Campinas e Região
@@ -93,6 +111,8 @@ export default async function Image() {
                         flexDirection: 'column',
                         alignItems: 'center',
                         gap: '15px',
+                        zIndex: 10,
+                        position: 'relative',
                     }}
                 >
                     <div
@@ -104,7 +124,7 @@ export default async function Image() {
                             fontWeight: 'bold',
                             padding: '20px 50px',
                             borderRadius: '12px',
-                            boxShadow: '0 10px 30px rgba(0, 0, 0, 0.3)',
+                            boxShadow: '0 10px 30px rgba(0, 0, 0, 0.5)',
                         }}
                     >
                         WhatsApp: (19) 99836-2654
@@ -112,7 +132,8 @@ export default async function Image() {
                     <div
                         style={{
                             fontSize: '24px',
-                            color: 'rgba(255, 255, 255, 0.9)',
+                            color: 'white',
+                            textShadow: '2px 2px 4px rgba(0, 0, 0, 0.8)',
                         }}
                     >
                         Orçamento Grátis
@@ -126,7 +147,9 @@ export default async function Image() {
                         bottom: '40px',
                         display: 'flex',
                         fontSize: '24px',
-                        color: 'rgba(255, 255, 255, 0.8)',
+                        color: 'white',
+                        zIndex: 10,
+                        textShadow: '2px 2px 4px rgba(0, 0, 0, 0.8)',
                     }}
                 >
                     Marcas: Hitachi • Gree • 6 anos de experiência

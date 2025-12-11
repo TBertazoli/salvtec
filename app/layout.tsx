@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "SalvTec - Climatização Profissional | Ar Condicionado SP",
+  title: "SalvTec - Manutenção de Ar Condicionado",
   description: "SalvTec oferece instalação, manutenção e higienização de ar condicionado em Campinas e região. Atendemos residências, comércios e indústrias com marcas Hitachi e Gree. 6 anos de experiência.",
   keywords: "ar condicionado, climatização, ar condicionado residencial, ar condicionado comercial, ar condicionado industrial, HVAC, Hitachi, Gree",
   authors: [{ name: "SalvTec" }],
@@ -23,12 +23,12 @@ export const metadata: Metadata = {
     locale: "pt_BR",
     url: "https://salvtec.com.br",
     siteName: "SalvTec",
-    title: "SalvTec - Climatização Profissional | Ar Condicionado Campinas e Região",
+    title: "SalvTec - Manutenção de Ar Condicionado",
     description: "Instalação, manutenção e higienização de ar condicionado em Campinas e Região. Atendemos residências, comércios e indústrias com as melhores marcas do mercado.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "SalvTec - Climatização Profissional | Ar Condicionado Campinas e Região",
+    title: "SalvTec - Manutenção de Ar Condicionado",
     description: "Instalação, manutenção e higienização de ar condicionado em Campinas e Região. Atendemos residências, comércios e indústrias com as melhores marcas do mercado.",
   },
   robots: {
