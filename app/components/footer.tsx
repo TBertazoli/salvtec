@@ -103,7 +103,7 @@ export default function Footer() {
                         © {new Date().getFullYear()} Cre8ive Devs. Todos os direitos reservados.
                     </p>
                     <div className="text-xs">
-                        <span className="hidden md:inline">R. Luís Birochi, 25 - Conj. Hab. Santana II, Campinas - SP, 13105-744 •</span> Atendimento em Campinas e Região
+                        <span className="hidden md:inline">R. Luís Birochi, 25 - Conj. Hab. Santana II, Sousas - Campinas - SP, 13105-744 •</span> Atendimento em Sousas - Campinas e Região
                     </div>
                 </div>
             </div>
