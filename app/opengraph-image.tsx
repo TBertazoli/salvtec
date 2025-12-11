@@ -1,6 +1,8 @@
 import { ImageResponse } from 'next/og'
+import { readFile } from 'fs/promises'
+import { join } from 'path'
 
-export const runtime = 'edge'
+export const runtime = 'nodejs'
 export const alt = 'SalvTec - Climatização Profissional'
 export const size = {
     width: 1200,
@@ -9,6 +11,10 @@ export const size = {
 export const contentType = 'image/png'
 
 export default async function Image() {
+    // Read the image file from the public directory
+    const imageData = await readFile(join(process.cwd(), 'public/images/hero2-optimized.webp'))
+    const base64Image = `data:image/webp;base64,${imageData.toString('base64')}`
+
     return new ImageResponse(
         (
             <div
@@ -25,7 +31,7 @@ export default async function Image() {
             >
                 {/* Background Image */}
                 <img
-                    src="https://salvtec.com.br/images/hero2-optimized.webp"
+                    src={base64Image}
                     alt="Background"
                     style={{
                         position: 'absolute',
