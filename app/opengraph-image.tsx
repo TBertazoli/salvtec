@@ -1,8 +1,6 @@
 import { ImageResponse } from 'next/og'
-import { readFile } from 'fs/promises'
-import { join } from 'path'
 
-export const runtime = 'nodejs'
+export const runtime = 'edge'
 export const alt = 'SalvTec - Climatização Profissional'
 export const size = {
     width: 1200,
@@ -11,10 +9,6 @@ export const size = {
 export const contentType = 'image/png'
 
 export default async function Image() {
-    // Read the image file from the public directory
-    const imageData = await readFile(join(process.cwd(), 'public/images/hero2-optimized.webp'))
-    const base64Image = `data:image/webp;base64,${imageData.toString('base64')}`
-
     return new ImageResponse(
         (
             <div
@@ -27,40 +21,63 @@ export default async function Image() {
                     justifyContent: 'center',
                     fontFamily: 'system-ui, sans-serif',
                     position: 'relative',
+                    background: 'linear-gradient(135deg, #1e3a8a 0%, #3b82f6 50%, #60a5fa 100%)',
                 }}
             >
-                {/* Background Image */}
-                <img
-                    src={base64Image}
-                    alt="Background"
-                    style={{
-                        position: 'absolute',
-                        top: 0,
-                        left: 0,
-                        width: '100%',
-                        height: '100%',
-                        objectFit: 'cover',
-                    }}
-                />
-
-                {/* Dark overlay */}
+                {/* Decorative elements */}
                 <div
                     style={{
                         position: 'absolute',
-                        inset: 0,
-                        background: 'rgba(0, 0, 0, 0.6)',
-                        zIndex: 1,
+                        top: '-100px',
+                        right: '-100px',
+                        width: '400px',
+                        height: '400px',
+                        borderRadius: '50%',
+                        background: 'rgba(255, 255, 255, 0.1)',
+                    }}
+                />
+                <div
+                    style={{
+                        position: 'absolute',
+                        bottom: '-150px',
+                        left: '-150px',
+                        width: '500px',
+                        height: '500px',
+                        borderRadius: '50%',
+                        background: 'rgba(255, 255, 255, 0.1)',
+                    }}
+                />
+                {/* Decorative elements */}
+                <div
+                    style={{
+                        position: 'absolute',
+                        top: '-100px',
+                        right: '-100px',
+                        width: '400px',
+                        height: '400px',
+                        borderRadius: '50%',
+                        background: 'rgba(255, 255, 255, 0.1)',
+                    }}
+                />
+                <div
+                    style={{
+                        position: 'absolute',
+                        bottom: '-150px',
+                        left: '-150px',
+                        width: '500px',
+                        height: '500px',
+                        borderRadius: '50%',
+                        background: 'rgba(255, 255, 255, 0.1)',
                     }}
                 />
 
                 {/* Logo/Brand */}
-                < div
+                <div
                     style={{
                         display: 'flex',
                         alignItems: 'center',
                         marginBottom: '40px',
                         zIndex: 10,
-                        position: 'relative',
                     }}
                 >
                     <div
@@ -69,15 +86,14 @@ export default async function Image() {
                             fontWeight: 'bold',
                             color: 'white',
                             letterSpacing: '-2px',
-                            textShadow: '2px 2px 4px rgba(0, 0, 0, 0.8)',
                         }}
                     >
                         SalvTec
                     </div>
-                </div >
+                </div>
 
                 {/* Headline */}
-                < div
+                <div
                     style={{
                         fontSize: '56px',
                         fontWeight: 'bold',
@@ -87,15 +103,13 @@ export default async function Image() {
                         lineHeight: 1.2,
                         marginBottom: '30px',
                         zIndex: 10,
-                        position: 'relative',
-                        textShadow: '2px 2px 4px rgba(0, 0, 0, 0.8)',
                     }}
                 >
                     Soluções em Climatização
-                </div >
+                </div>
 
                 {/* Subheadline */}
-                < div
+                <div
                     style={{
                         fontSize: '32px',
                         color: 'white',
@@ -103,22 +117,19 @@ export default async function Image() {
                         maxWidth: '800px',
                         marginBottom: '50px',
                         zIndex: 10,
-                        position: 'relative',
-                        textShadow: '2px 2px 4px rgba(0, 0, 0, 0.8)',
                     }}
                 >
-                    Instalação e Manutenção de Ar Condicionado em Campinas e Região
-                </div >
+                    Instalação e Manutenção de Ar Condicionado em Campinas
+                </div>
 
                 {/* Call to Action */}
-                < div
+                <div
                     style={{
                         display: 'flex',
                         flexDirection: 'column',
                         alignItems: 'center',
                         gap: '15px',
                         zIndex: 10,
-                        position: 'relative',
                     }}
                 >
                     <div
@@ -130,37 +141,35 @@ export default async function Image() {
                             fontWeight: 'bold',
                             padding: '20px 50px',
                             borderRadius: '12px',
-                            boxShadow: '0 10px 30px rgba(0, 0, 0, 0.5)',
+                            boxShadow: '0 10px 30px rgba(0, 0, 0, 0.3)',
                         }}
                     >
-                        WhatsApp: (19) 99836-2654
+                        📱 (19) 99836-2654
                     </div>
                     <div
                         style={{
                             fontSize: '24px',
                             color: 'white',
-                            textShadow: '2px 2px 4px rgba(0, 0, 0, 0.8)',
                         }}
                     >
                         Orçamento Grátis
                     </div>
-                </div >
+                </div>
 
                 {/* Footer with brands */}
-                < div
+                <div
                     style={{
                         position: 'absolute',
                         bottom: '40px',
                         display: 'flex',
-                        fontSize: '24px',
-                        color: 'white',
+                        fontSize: '22px',
+                        color: 'rgba(255, 255, 255, 0.9)',
                         zIndex: 10,
-                        textShadow: '2px 2px 4px rgba(0, 0, 0, 0.8)',
                     }}
                 >
-                    Marcas: Hitachi • Gree • 6 anos de experiência
-                </div >
-            </div >
+                    Hitachi • Gree • 6 anos de experiência
+                </div>
+            </div>
         ),
         {
             ...size,
