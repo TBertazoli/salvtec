@@ -13,7 +13,7 @@ export default async function Image() {
         (
             <div
                 style={{
-                    background: 'linear-gradient(135deg, #0066cc 0%, #004c99 100%)',
+                    backgroundImage: 'url(/images/hero2-optimized.jpg)',
                     width: '100%',
                     height: '100%',
                     display: 'flex',
@@ -24,8 +24,22 @@ export default async function Image() {
                     position: 'relative',
                 }}
             >
+                {/* Background Image/Icon */}
+                < div
+                    style={{
+                        position: 'absolute',
+                        right: '80px',
+                        top: '50%',
+                        transform: 'translateY(-50%)',
+                        opacity: 0.15,
+                        fontSize: '400px',
+                    }}
+                >
+                    ❄️
+                </div >
+
                 {/* Logo/Brand */}
-                <div
+                < div
                     style={{
                         display: 'flex',
                         alignItems: 'center',
@@ -42,10 +56,10 @@ export default async function Image() {
                     >
                         SalvTec
                     </div>
-                </div>
+                </div >
 
                 {/* Headline */}
-                <div
+                < div
                     style={{
                         fontSize: '56px',
                         fontWeight: 'bold',
@@ -57,10 +71,10 @@ export default async function Image() {
                     }}
                 >
                     Soluções em Climatização
-                </div>
+                </div >
 
                 {/* Subheadline */}
-                <div
+                < div
                     style={{
                         fontSize: '32px',
                         color: 'rgba(255, 255, 255, 0.9)',
@@ -70,10 +84,10 @@ export default async function Image() {
                     }}
                 >
                     Instalação e Manutenção de Ar Condicionado em Campinas e Região
-                </div>
+                </div >
 
                 {/* Call to Action */}
-                <div
+                < div
                     style={{
                         display: 'flex',
                         flexDirection: 'column',
@@ -103,10 +117,10 @@ export default async function Image() {
                     >
                         Orçamento Grátis
                     </div>
-                </div>
+                </div >
 
                 {/* Footer with brands */}
-                <div
+                < div
                     style={{
                         position: 'absolute',
                         bottom: '40px',
@@ -116,8 +130,8 @@ export default async function Image() {
                     }}
                 >
                     Marcas: Hitachi • Gree • 6 anos de experiência
-                </div>
-            </div>
+                </div >
+            </div >
         ),
         {
             ...size,
