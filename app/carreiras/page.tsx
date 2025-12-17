@@ -1,6 +1,7 @@
 
 import Header from '../components/header';
 import Footer from '../components/footer';
+import Image from 'next/image';
 
 interface JobPosition {
     id: number;
@@ -57,14 +58,16 @@ export default function Carreiras() {
                                 vida das pessoas.
                             </p>
                         </div>
-                        {/* <div className="relative h-[300px] rounded-lg overflow-hidden">
+                        <div className="relative h-[300px] rounded-lg overflow-hidden">
                             <Image
-                                src="/images/team-work.jpg"
-                                alt="Equipe SalvTec"
+                                src="/images/ac2.jpg"
+                                alt="Ar condicionado instalado pela equipe SalvTec"
                                 fill
                                 className="object-cover"
+                                sizes="(max-width: 768px) 100vw, 50vw"
+                                priority
                             />
-                        </div> */}
+                        </div>
                     </div>
 
                     {/* Benefits */}
