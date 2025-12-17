@@ -99,9 +99,14 @@ export default function Footer() {
                 </div>
 
                 <div className="mt-10 border-t border-gray-200 pt-6 flex flex-col md:flex-row items-center justify-between gap-4">
-                    <p className="text-xs">
-                        © {new Date().getFullYear()} Cre8ive Devs. Todos os direitos reservados.
-                    </p>
+                    <div className="text-xs md:text-sm text-center md:text-left">
+                        <p>
+                            © {new Date().getFullYear()} SalvTec - Soluções em Climatização. Todos os direitos reservados.
+                        </p>
+                        <p>
+                            Desenvolvido por <a href="https://cre8ivedevs.com" target="_blank" rel="noopener noreferrer" className="underline hover:text-rose-500">Cre8ive Devs</a>
+                        </p>
+                    </div>
                     <div className="text-xs">
                         <span className="hidden md:inline">R. Luís Birochi, 25 - Conj. Hab. Santana II, Sousas - Campinas - SP, 13105-744 •</span> Atendimento em Sousas - Campinas e Região
                     </div>

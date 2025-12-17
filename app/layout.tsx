@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { OrganizationSchema, BreadcrumbSchema } from "./components/schema";
+import Link from "next/link";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -12,6 +13,17 @@ const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
+
+export function WhatsAppButton() {
+  return (
+
+    <Link href="https://wa.me/5519998362654" target="_blank"
+      className="fixed bottom-6 right-6 z-50 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-xl hover:bg-green-600 transition"
+    >
+      <img src="/images/whatsapp.png" alt="WhatsApp" className="w-8 h-8" />
+    </Link>
+  );
+}
 
 export const metadata: Metadata = {
   title: "SalvTec - Manutenção de Ar Condicionado em Campinas",
@@ -59,6 +71,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
+        <WhatsAppButton />
       </body>
     </html>
   );
